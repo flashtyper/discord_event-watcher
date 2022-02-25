@@ -2,16 +2,12 @@ const { Client, Intents, Discord, MessageEmbed } = require("discord.js");
 const client = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_SCHEDULED_EVENTS, Intents.FLAGS.GUILD_MESSAGES]});
 
 
-//const BOT_TOKEN = 'OTQ0OTU3OTMwMTExOTE0MDQ0.YhJKpw.xOXmcMsYnW_jikPsKj7DZTvGakc'; //dev-bot 1
-const BOT_TOKEN = 'NzgzOTQ5NDk4MjE3MDA1MTE3.X8iL3Q.dW0L-KhrxI7cPQM8FFhneSgyXx0'; // event kontr OI llierer
+const BOT_TOKEN = <TOKEN>;
 client.login(BOT_TOKEN);
 
-//const guildID = "944957512678002749"; //dev-srv
-//const channelID = "944957512678002753"; // write
-
-const guildID = "184368017080057856"; // oi-discord
-const channelID = "711281978707673178"; // derhartekern
-const groupID = "390604433211260929"; //Admin
+const guildID = "<guild ID>";
+const channelID = "<channel ID>";
+const groupID = "<role ID>"; 
 
 var txtChannel;
 
@@ -27,9 +23,6 @@ client.on("guildScheduledEventCreate", guildEvent => {
 
 });
 client.on("guildScheduledEventUpdate", (Old, New) => {
-        //console.log(Old);
-        //console.log(New);
-
         if (Old.name !== New.name && Old.scheduledStartTimestamp === New.scheduledStartTimestamp) {
                 // only name change
                 txtChannel.send(
