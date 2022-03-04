@@ -12,6 +12,14 @@ checks if someone created or changed a discord event and warns if the event star
 - gateway intents: GUILDS, GUILD_EVENTS, GUILD_MESSAGES
 - this index.js :)
 
+# Configuration
+You need:
+- a BOT-Token
+- a channel-id in which the bot send the messages
+- a guild id (obvious)
+- a role-id (needs the bot for the 1h-reminder)
+Please configure these four things first before running.
+
 # Start the Bot
 I recommend to use a screen instance (works great for me). So install "screen" with apt install screen and create a new screen instance with `screen`. After that, execute this index.js with `node index.js`. 
 
