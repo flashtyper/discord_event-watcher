@@ -1,10 +1,21 @@
 # discord_event-watcher
-checks if someone changed an discord event:
+checks if someone created or changed a discord event and warns if the event starts in 1 hour:
 
-This script checks, if someone created a new event or if the name or scheduled start time changed. 
 
-![grafik](https://user-images.githubusercontent.com/83031404/152676723-a51cd068-d5f4-409c-a23f-035ad19ca9c1.png)
+![grafik](https://user-images.githubusercontent.com/83031404/156826235-234aecb7-5b55-420a-bf3d-367fdaeb728c.png)
+![grafik](https://user-images.githubusercontent.com/83031404/156826886-7381b237-e877-47bf-af53-d2f1f6de3217.png)
+![grafik](https://user-images.githubusercontent.com/83031404/156827129-1376662d-bd40-47c0-8622-debc20207d64.png)
 
-![grafik](https://user-images.githubusercontent.com/83031404/152676753-f2e3b589-22ae-4a67-b1cb-3e0aa2473d15.png)
+# Installation
+**required:**: 
+- discord.js https://discord.js.org/
+- gateway intents: GUILDS, GUILD_EVENTS, GUILD_MESSAGES
+- this index.js :)
 
-(there is a bug with the date.. i know...) 
+# Start the Bot
+I recommend to use a screen instance (works great for me). So install "screen" with apt install screen and create a new screen instance with `screen`. After that, execute this index.js with `node index.js`. 
+
+After that, exit the screen instance with `STRG + A, D`. For further information see https://wiki.ubuntuusers.de/Screen/
+
+# Misc
+open an issue if anything weird happens or if you would like to have an improvement. thx
