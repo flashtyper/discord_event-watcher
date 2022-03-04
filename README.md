@@ -18,7 +18,7 @@ You need:
 - a channel-id in which the bot send the messages
 - a guild id (obvious)
 - a role-id (needs the bot for the 1h-reminder)
-- 
+
 Please configure these four things first before running.
 
 # Start the Bot
