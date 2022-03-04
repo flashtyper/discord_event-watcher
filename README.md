@@ -7,7 +7,7 @@ checks if someone created or changed a discord event and warns if the event star
 ![grafik](https://user-images.githubusercontent.com/83031404/156827129-1376662d-bd40-47c0-8622-debc20207d64.png)
 
 # Installation
-**required:**: 
+**required:** 
 - discord.js https://discord.js.org/
 - gateway intents: GUILDS, GUILD_EVENTS, GUILD_MESSAGES
 - this index.js :)
